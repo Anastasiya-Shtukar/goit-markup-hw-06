@@ -74,12 +74,10 @@ body {
 }
 
 .mobile-menu {
+  display: none;
   position: absolute;
   background-color: #ffffff;
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
 
 .menu-nav-mobile {
