@@ -23,6 +23,7 @@ body {
 
   background: #ffffff;
   margin: 0 auto;
+  width: 320px;
 }
 
 .header .container {
@@ -243,6 +244,10 @@ ul {
   padding: 120px 0;
 }
 
+.section-three .container {
+  margin: auto 28px;
+}
+
 .icon-list {
   display: flex;
   justify-content: center;
@@ -457,6 +462,8 @@ ul {
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
+  text-align: center;
+  margin-right: auto;
 }
 
 .studio-two {
@@ -747,7 +754,7 @@ input::placeholder {
     overflow: hidden;
   }
 
-  .logo {
+  .nav .logo {
     margin: 16px auto 16px 16px;
   }
 
