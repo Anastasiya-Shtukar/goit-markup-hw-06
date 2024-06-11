@@ -36,6 +36,8 @@ body {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  display: flex;
+  justify-content: center;
 }
 
 .header a {
@@ -353,6 +355,9 @@ ul {
 .section-four {
   background-color: WHITE;
   padding: 120px 0 120px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .section-four-heading {
@@ -771,7 +776,6 @@ input::placeholder {
   margin-right: calc((100% - 169px) / 2);
   font-weight: 500;
 }
-
 @media (max-width: 767px) {
   .ul-menu-nav {
     position: absolute;
@@ -804,6 +808,16 @@ input::placeholder {
     margin: 16px auto 16px 16px;
   }
 
+  .section-two .container {
+    margin: 96px auto;
+    display: flex;
+  }
+  .section-two-paragraph {
+    margin-bottom: 72px;
+  }
+}
+
+@media (max-width: 1158px) {
   .icon-section-two {
     position: absolute;
     width: 1px;
@@ -817,16 +831,9 @@ input::placeholder {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  .section-two .container {
-    margin: 96px auto;
-    display: flex;
-  }
-  .section-two-paragraph {
-    margin-bottom: 72px;
-  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   body {
     min-width: 768px;
   }
@@ -915,20 +922,6 @@ input::placeholder {
     min-width: 768px;
   }
 
-  .icon-section-two {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
   .ul-section-two {
     margin: 96px 16px;
   }
@@ -946,13 +939,10 @@ input::placeholder {
     padding: 0;
   }
 
-  .footer {
-    padding: 96px 108px;
-  }
-
   .footer .container {
     row-gap: 72px;
     justify-content: flex-start;
+    padding-left: 108px;
   }
 
   .footer-logo-p {
@@ -1057,6 +1047,12 @@ input::placeholder {
     color: #2e2f42;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .section-two-paragraph {
+    font-weight: 400;
+    letter-spacing: normal;
   }
 
   .section-three-list {
